@@ -9,9 +9,7 @@ router.get('/', async (req, res, next) => {
         
         const scores = await Score.find({}).sort('time').limit(limit);
         res.json({
-            data: {
-                scores: scores
-            }
+            scores: scores
         });
     } catch (err) {
         next(err);
