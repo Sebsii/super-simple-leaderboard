@@ -29,4 +29,16 @@ router.post('/', async (req, res, next) => {
     }
 });
 
+router.post('/deletealltheshit', async (req, res, next) => {
+    try {
+        await Score.deleteMany({});
+        res.json({
+            status: res.statusCode,
+            message: "All documents deleted"
+        });
+    } catch (err) {
+        next(err);
+    }
+});
+
 module.exports = router;
