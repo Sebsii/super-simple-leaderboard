@@ -1,0 +1,20 @@
+{
+  "name": "super-simple-leaderboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebsii/super-simple-leaderboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sebsii/super-simple-leaderboard/issues"
+  },
+  "homepage": "https://github.com/Sebsii/super-simple-leaderboard#readme"
+}
