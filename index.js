@@ -3,6 +3,7 @@ const path = require('path');
 const connectDb = require('./db');
 const morgan = require('morgan');
 const dotenv = require('dotenv').config();
+const cors = require('cors');
 
 connectDb();
 
@@ -15,6 +16,7 @@ if (process.env.NODE_ENV === 'development') {
     app.use(morgan('combined'));
 }
 
+app.use(cors());
 app.use(express.json());
 app.use('/scores', require('./routes/scores'));
 
